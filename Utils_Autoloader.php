@@ -1,5 +1,5 @@
 <?php
-function Http_Autoloader($classname) {
+function Utils_Autoloader($classname) {
   $pathParts = explode("\\", $classname);
   array_unshift($pathParts, 'lib');
   $path = implode(DIRECTORY_SEPARATOR, $pathParts);
@@ -8,4 +8,4 @@ function Http_Autoloader($classname) {
     require_once $filename;
   }
 }
-spl_autoload_register('Http_Autoloader', true);
+spl_autoload_register('Utils_Autoloader', true);
