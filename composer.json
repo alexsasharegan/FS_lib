@@ -2,7 +2,7 @@
     "name": "alexsasharegan/fs",
     "type": "library",
     "description": "A collection of classes to manage the details of File System tasks.",
-    "keywords": ["http","rest","api"],
+    "keywords": ["filesystem","fs","csv"],
     "homepage": "https://github.com/alexsasharegan/FS_lib",
     "license": "MIT",
     "authors": [
