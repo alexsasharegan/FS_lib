@@ -2,6 +2,7 @@
 
 function FS_Autoloader($classname) {
   $pathParts = explode("\\", $classname);
+  array_shift($pathParts);
   array_unshift($pathParts, 'src');
   $path = implode(DIRECTORY_SEPARATOR, $pathParts);
   $filename = __DIR__.DIRECTORY_SEPARATOR.$path.'.php';
