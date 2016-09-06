@@ -23,7 +23,7 @@ class FileHelper {
     return $dir;
   }
 
-  public static function climbDirectory( $levels = 1, $basePath = '' ) {
+  public static function climbDir( $levels = 1, $basePath = '' ) {
     if ( empty( $basePath ) ) {
       $basePath = current( debug_backtrace() )['file'];
     }
