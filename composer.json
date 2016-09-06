@@ -1,5 +1,5 @@
 {
-    "name": "alexsasharegan/FS",
+    "name": "alexsasharegan/fs",
     "type": "library",
     "description": "A collection of classes to manage the details of File System tasks.",
     "keywords": ["http","rest","api"],
