@@ -4,6 +4,7 @@
     "description": "A collection of classes to manage the details of File System tasks.",
     "keywords": ["http","rest","api"],
     "homepage": "https://github.com/alexsasharegan/FS_lib",
+    "license": "MIT",
     "authors": [
         {
             "name": "Alex Regan",
