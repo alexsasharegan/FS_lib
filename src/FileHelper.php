@@ -36,7 +36,8 @@ class FileHelper {
     return implode('/', $directoryList);
   }
 
-  public static function SQLDateToPath( $SQLDate ) {
+  public static function SQLDateToPath( $SQLDate, $timezone = "America/Phoenix" ) {
+    date_default_timezone_set( $timezone );
     $timeStamp = strtotime( $SQLDate );
 
     return implode( DIRECTORY_SEPARATOR, [
@@ -46,7 +47,8 @@ class FileHelper {
     ]);
   }
 
-  public static function getSQLDate() {
+  public static function getSQLDate( $timezone = "America/Phoenix" ) {
+    date_default_timezone_set( $timezone );
     return date('Y-m-d H:i:s');
   }
 
